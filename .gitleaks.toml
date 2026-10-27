@@ -1,0 +1,8 @@
+# The default rules, with one reviewed exception: a golden file of Task's own
+# secret-masking test, whose value is a synthetic fixture.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Task's secret-masking test fixture"
+paths = ['''^testdata/secrets/testdata/TestSecretVars-multiple_secrets_masked\.golden$''']
